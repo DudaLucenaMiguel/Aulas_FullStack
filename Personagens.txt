@@ -1,0 +1,99 @@
+Array página Personagens:
+
+          characters={[
+            { src: image1, alt: 'Dwight Schrute', title: "Dwight Schrute", description: "Assistente do gerente regional, , é um premiado vendedor e voluntário reserva do xerife de Lackawanna." },
+            { src: image2, alt: 'Michael Scott', title: "Michael Scott", description: "Gerente regional da filial de Scranton da Dunder Mifflin Paper Company" },
+            { src: image3, alt: 'Jim Halpert', title: "Jim Halpert", description: "Um dos vendedores da Dunder Mifflin, tem uma forte amizade marcada por uma tensão romântica, com a recepcionista Pam." },
+            { src: image4, alt: 'Pam Beesly', title: "Pam Beesly", description: "Recepcionista da Dunder Mifflin, começa a série como noiva do entregador Roy." },
+            { src: image5, alt: 'Angela Martin', title: "Angela Martin", description: "Contadora. Rígida e séria, vive sozinha e tem mania por gatos." },
+            { src: image6, alt: 'Phyllis Vance', title: "Phyllis Vance", description: "Ela é um tipo quieto, mas amigável, que adora conversa de garotas e fofoca." },
+            { src: image7, alt: 'Stanley Hudson', title: "Stanley Hudson", description: "Ele é retratado como um funcionário sério, perpetuamente mal-humorado e descontente." },
+            { src: image8, alt: 'Holly Flax', title: "Holly Flax", description: "Chega a Dunder Mifflin para servir como substituta de Toby Flenderson , o anterior representante de RH da filial de Scranton." },
+            { src: image9, alt: 'Ryan Howard', title: "Ryan Howard", description: "Estagiário e estudante de administração." },
+          ]}
+
+
+
+Páginas Personagens Card:
+
+import styled from 'styled-components'
+
+const Container = styled.div`
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+`
+
+const MainTitle = styled.h1`
+  text-align: center;
+  margin: 40px 0;
+`
+
+const ImageCard = styled.div`
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Isso vai centralizar a imagem e o título */
+  margin-bottom: 30px;
+`
+
+const StyledImage = styled.img`
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #007BFF;
+  object-fit: cover;
+  margin-bottom: 10px;
+`
+
+const SubTitle = styled.h2`
+  color: #007BFF;
+  text-align: center; /* Garante que o título está centralizado */
+  margin: 0 0 5px 0;
+`
+
+const Description = styled.p`
+  text-align: center;
+  margin-bottom: 10px;
+  flex: 1;
+`
+
+const Button = styled.button`
+  width: 50%; /* Define a largura do botão */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  margin-top: auto; /* Empurra o botão para a base do cartão */
+  &:hover{
+    background-color: #394c73;
+  }
+`
+
+function PersonagensCard({characters}) {
+  return (
+    <div>
+      <MainTitle>
+        Personagens
+      </MainTitle>
+      <Container>
+          {characters.map((character, index) => (
+            <ImageCard key={index}>
+              <StyledImage src={character.src} alt={character.alt} />
+              <SubTitle>{character.title}</SubTitle>
+              <Description>{character.description}</Description>
+              <Button>Saiba mais</Button>
+            </ImageCard>
+          ))}
+      </Container>
+      </div>
+  )
+}
+
+export default PersonagensCard;

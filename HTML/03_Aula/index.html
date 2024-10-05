@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Layout em Flex e Grid</title>
+</head>
+<body>
+    <!-- div.container>header>nav.menu>div.logo{Logo da Empresa}+ul.menu-itens>li*3>a{item $}^^div.search-bar>form>input+button:submit{Buscar} -->
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <div class="logo">Logo da Empresa</div>
+                <ul class="menu-itens">
+                    <li><a href="#">item 1</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                </ul>
+                    <form>
+                        <input type="text" placeholder="Faça sua Busca">
+                        <button type="submit">Buscar</button>
+                    </form>
+            </nav>
+        </header>
+        <div class="main-container">
+        <!-- aside>img.author-thumbnail+h2.author-name{Duda}+a.author-email{duda.miguel@edu.feca.br}+p.author-bio>lorem+div.social-links>a*5>i.fab.fa-.social-icon -->
+        <aside>
+            <img src="https://placehold.co/100x100/000000/FFFFFF.png" alt="" class="author-thumbnail">
+            <h2 class="author-name">Duda Lucena Miguel</h2>
+            <a href="mailto: duda.miguel@edu.fecap.br" class="author-email">duda.miguel@edu.fecap.br</a>
+            <p class="author-bio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem velit atque officiis dolor rerum reiciendis quaerat fugiat, praesentium soluta assumenda ducimus expedita doloribus aperiam hic veniam alias obcaecati ullam?
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook social-icon"></i></a>
+                    <a href="#"><i class="fab fa-behance social-icon"></i></a>
+                    <a href="#"><i class="fab fa-linkedin social-icon"></i></a>
+                    <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                    <a href="#"><i class="fab fa-github social-icon"></i></a>
+                </div>
+            </p>
+        </aside>
+            <div class="content-container">
+                <!-- main>div.carrossel>div.carrossel-images>img*3^button.prev{Prev}+button.next{Next} -->
+                <main>
+                    <div class="carrossel">
+                        <div class="carrossel-images">
+                            <img src="https://placehold.co/950x250/cccccc/333333.png" alt="Image 1">
+                            <img src="https://placehold.co/950x250/000000/FFFFFF.png" alt="Image 2">
+                            <img src="https://placehold.co/950x250/333333/cccccc.png" alt="Image 3">
+                        </div>
+                        <button class="prev">Prev</button>
+                        <button class="next">Next</button>
+                    </div>
+                </main>
+                <!-- section.content-row>article.content*3>img+p>lorem^button{Saiba Mais} -->
+                <section class="content-row">
+                    <article class="content">
+                        <img src="https://placehold.co/250x150/cccccc/333333.png" alt="imagem 1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic vel totam corrupti numquam? Eum eligendi nobis odit debitis quos corrupti, pariatur quae nam harum quaerat dicta, molestiae quisquam officiis dignissimos.</p>
+                        <button>Saiba Mais</button>
+                    </article>
+                    <article class="content">
+                        <img src="https://placehold.co/250x150/000000/FFFFFF.png" alt="Imagem 2">
+                        <p>Deserunt illum cupiditate, labore debitis eos iste odit delectus sunt, sit minus alias nesciunt commodi repellendus eum dolorum ducimus architecto ullam, ipsa dolores nostrum ea. Necessitatibus consectetur quidem eligendi tempora!</p>
+                        <button>Saiba Mais</button>
+                    </article>
+                    <article class="content">
+                        <img src="https://placehold.co/250x150/333333/cccccc.png" alt="Imagem 3">
+                        <p>Eligendi impedit mollitia laudantium voluptas, ex, laboriosam placeat ipsam quia vero porro, veniam delectus? Vero porro necessitatibus nulla quod obcaecati ducimus perspiciatis sint atque eos nemo. Cumque distinctio minus qui!</p>
+                        <button>Saiba Mais</button>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <!-- footer>div.footer-container>ul*3>li*3>a{Item $} -->
+        <footer>
+            <div class="footer-container">
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 - Web Full Stack - FECAP - Creative Commons</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Documento em GRID</title>
+</head>
+<body>
+    <!-- div.container>header{Header}+main{Main}+aside{Aside}+section*3.content${content $}+footer{Footer} -->
+    <div class="container">
+        <header>
+            <!-- nav>div.logo{LOGO DA EMPRESA}+ul>li*3>a{Item $}^^div.search-bar>input+button{Buscar} -->
+            <nav class ="navbar navbar-expand-lg justify-content-between custom-navbar">
+                <div class=" navbar-brand logo">LOGO DA EMPRESA</div>
+                <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bar"></i>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbarNav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Item 1</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item 2</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Item 3</a></li>
+                    </ul>
+                <div class="search-bar"><input type="text"><button>Buscar</button></div>
+            </div>
+            </nav>
+        </header>
+        <main>Main</main>
+        <aside>Aside</aside>
+        <section class="content1">content 1</section>
+        <section class="content2">content 2</section>
+        <section class="content3">content 3</section>
+        <footer>Footer</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
