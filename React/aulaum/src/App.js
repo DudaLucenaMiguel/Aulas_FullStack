@@ -6,6 +6,8 @@ import Home from "./Pages/Home";
 import Personagens from "./Pages/Personagens";
 import Temporadas from "./Pages/Temporadas";
 import Bio from "./Pages/Bio";
+import Temporada from "./Pages/Temporada";
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/cadastro" element={<Cadastro/>}/>
           <Route path="/Bio/:id" element={<Bio/>}/>
+          <Route path="/Temporada/:id" element={<Temporada/>}/>
         </Routes>
       </Router>
     </div>

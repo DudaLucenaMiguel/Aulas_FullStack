@@ -53,7 +53,6 @@ const Button = styled.button`
   }
 `
 
-
 function TemporadasCard({seasons}){
 
     const navigate = useNavigate();

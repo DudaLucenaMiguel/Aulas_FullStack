@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Container = styled.div`
 display: flex;
@@ -27,13 +27,15 @@ text-align: center;
 
 
 function ImageText({images}){
+const navigate = useNavigate()
+
     return(
     <Container>
         {images.map((image, index) => (
             <ImageContainer key = {index}>
                 <img src = {image.src} alt={image.alt}/>
                 <Text>{image.text}</Text>
-                <button>Saiba Mais</button>
+                <button onClick={() => navigate(`/temporada/${image.id}`)} >Saiba Mais</button>
             </ImageContainer>
         ))}
     </Container>

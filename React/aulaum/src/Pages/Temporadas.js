@@ -5,6 +5,7 @@ import imagem from "../Assets/img2.png";
 import TemporadasCard from "../components/TemporadasCard";
 
 
+
 function Temporadas(){
     
     const seasons = [
