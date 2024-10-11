@@ -40,7 +40,7 @@ text-align: center;
 margin: 40px 0;
 `
 
-function PersonagemCard({characters}){
+function PersonagemCard({characters, navigate}){
     return(
         <div>
             <MainTitle>Personagens</MainTitle>
@@ -50,7 +50,7 @@ function PersonagemCard({characters}){
                     <StyledImage src={character.src} alt={character.alt}/>
                     <SubTitle>{character.title}</SubTitle>
                     <Description>{character.description}</Description>
-                    <button>Saiba Mais</button>
+                    <button onClick={() => navigate(`/Bio/${character.id}`)}>Saiba Mais</button>
                 </ImageCard>
             ))}
             </Container>
