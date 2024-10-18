@@ -5,8 +5,6 @@ import ImageText from "../components/ImageText";
 import Imagem from "../Assets/img2.png";
 import React, {useEffect, useState} from "react";
 
-
-
 function Home(){
     const allSeason=[
         {id: 1, src:  Imagem, alt: "Descrição da Imagem 1", text: "1º temporada"}, 
